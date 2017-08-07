@@ -1,0 +1,13 @@
+{
+  "presets": ["es2015", "stage-0", "bluebird"],
+  "plugins": [
+    "transform-async-to-bluebird",
+    "transform-promise-to-bluebird",
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "babel-runtime"
+    }]
+  ]
+}
